@@ -1,0 +1,154 @@
+<!DOCTYPE html >
+<html lang="it">
+  <head>
+  <meta name="charset" content="utf-8">
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" id="viewport"/>
+ 
+    <link rel="stylesheet" type="text/css" href="css/imbarcamento.css" />
+    <script type="text/javaScript" src="js/imbarcamento.js"></script>
+  <title>CALCOLO DELL'IMBARCAMENTO DEI PAVIMENTI IN CALCESTRUZZO</title>
+  </head>
+   <body onload="init()">
+
+    <div id="contentapp">
+   <div id="intro">  
+  <h1 class="titleindex">CALCOLO DELL'IMBARCAMENTO ALL'INCROCIO DEI GIUNTI</h1> <br />
+  <p class="introtext"> 
+L'imbarcamento e una deformazione endogena che si manifesta in tutti i pavimenti di calcestruzzo con il sollevamento degli incroci di tutti i giunti (di costruzione, di dilatazione, e di contrazione) a breve termine dall'ultimazione dei lavori(circa 72 ore). <br />
+Ovvero e un incurvamento concavo, bidirezionale della piastra a cui viene attribuito il termine di CURLING, e la cui causa e la contrazione da ritiro non in equilibrio  tra l'ampia superficie esposta all'essicazione ed il fondo del pavimento ben protetto dall'essicazione e quindi privo di contrazioni.<br />
+Questo programma di calcolo consente al tecnico di determinare a priori il sollevamento del pavimento all'incrocio dei giunti e quindi rispondere meglio alle richieste di planarita del committente. <br />
+</p> 
+
+  <button id="scendi" onclick="fineintro()" style="border:none;background-color:#fff;display:block;margin:0 auto;"><img src="img/btndwn.png" width="60" alt="scendi" /> </button>
+  </div>
+  <div id="pinserimento">
+  <div id="inserimento">
+           <div class="ins">
+       <div class="titoloins">
+       <label>Classe  cls</label>
+       </div>
+       <div class="inputins"> 
+       <select id="classesp">
+       <option value="XC1"> XC1 </option>
+       <option value="XC2"> XC2 </option>
+       <option value="XC3"> XC3 </option>
+       <option value="XC4"> XC4 </option>
+       <option value="XF3"> XF3 </option>
+       <option value="XF4"> XF4 </option>
+       </select>
+       </div>
+       </div>
+  
+       <div class="ins">
+       <div class="titoloins">
+      <label for="rck">R<sub>ck</sub> N/mm<sup>2</sup> </label>
+       </div>
+       <div class="inputins"> 
+        <input type=number name="rck" id="rck" />
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+      <label for="digiucont">Dist. giunti in ml </label>
+       </div>
+       <div class="inputins"> 
+      <input type=number name="digiucont" id="digiucont" />
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label for="umidita">Umidita Rel. %</label>
+       </div>
+       <div class="inputins"> 
+       <input type=number name="umidita" id="umidita" />
+       </div>
+       </div>
+       
+      
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label for="spesspav">Spessore pav.<b>cm</b> </label>
+       </div>
+       <div class="inputins"> 
+       <input type=number name="spesspav" id="spesspav" /> 
+       </div>
+       </div>
+       
+     
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label >Tipo di getto</label>
+       </div>
+       <div class="inputins"> 
+        <select id="tipogetto">
+        <option value="diretto"> scarico diretto </option>
+        <option value="pompa"> getto con pompa </option>
+        </select> 
+       </div>
+       </div>
+       
+       
+       <div class="insalone">
+       <div class="titoloins">
+       <label>Sottofondo impermeabile o con telo di polietilene </label>
+       </div>
+        <table>
+         <tr>
+       <td><input type="radio" name="barriera" id="barriera" value="si" checked></td><td>SI</td>
+       <td><input type="radio" name="barriera" id="barrierano" value="no"></td><td>NO </td></tr>
+   
+          </table>
+         
+         
+     
+       </div>
+    </div>  
+    <div id="scelta">    
+         <br>
+       <button class="bottonev" id="calcola" onclick="controllo()">Calcola</button>
+       <button class="bottoner" type="reset" value="Reset">Reset </button>
+  
+ 
+
+                                                     <br /> 
+  <div id="attenzione"></div> 
+  </div>    
+ </div>                                                 
+<div id="risultati"> 
+ <br />
+
+<div id="risultaimbarcamento"> 
+<h1>IMBARCAMENTO</h1>                       
+<div id="imbarcamentot"></div>     <br /><br />
+<div id="alertimbarca"></div>
+ </div>
+  <br />
+<div id="imbarcamentobarriera"></div>      <br />
+
+
+<div id="canvas">
+<canvas id="imbarcamento"  style="background-color:#fff;display:block; margin:0 auto; " >
+<img id="imbpic" src="img/imbarcamento1.jpg" alt="risultato imbarcamento" />
+ </canvas>
+</div> 
+
+<br />
+<br />
+<div id="scelta1">
+ <button class="bottoner" id="ripeti" onclick="ripeti()">Ripeti</button>
+  <button class="bottonev" id='inviamail' onclick="inviamail()" style="text-align:center;">Invia</button>
+
+</div>
+ </div>
+</div>
+
+ 
+
+
+  </body>
+</html>

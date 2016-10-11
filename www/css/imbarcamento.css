@@ -1,0 +1,79 @@
+body{margin:0;max-width:100%;}
+#contentapp{width:100%;display:block;margin:0 auto;background-color:#fff;}
+#intro{width:90%; padding:0.5em 1em 0.9375em 1em; font:normal 0.875em arial;color:#333;display:block;margin:0 auto;}
+#scelta{width:80%;display:block;margin:0 auto;text-align:center;}
+#pinserimento{background-color:#ffffbd;background-size:cover; width:100%;}
+  #inserimento{width:98%;   
+  display:-webkit-flex; 
+  display: -ms-flexbox; 
+  display: flex;
+   -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+          justify-content:center;
+          align-content:space-between;}
+  .ins{width:40%;background-color:#fff;
+
+  border:0.125em solid #ddd;
+  box-shadow:0.3125em 0.3125em 0.3125em #888888; 
+  margin:40px 2% 0 2% ;
+ }   
+ .insalone{width:60%;background-color:#fff;
+
+  border:0.125em solid #ddd;
+  box-shadow:0.3125em 0.3125em 0.31255em #888888; 
+  margin-top:0.625em;}
+  .titoloins{width:100%;background-color:#aa2222;font:bold 0.875em arial;color:#fff;line-height:1.25em; text-align:center;}
+  input{width:3.125em;height:1.875em;display:block;margin:0.9375em auto;box-shadow:-0.1875em 0.1875em 0.25em #eee;text-align:center;font:bold 0.875em arial;color:#000044;}
+  .inputins{line-height:2.5em;display:block;margin:auto;}
+  button.bottoner, button.bottonev{width:6.25em;height:3.125em; font:bold 0.875em arial;color:#fff;padding:0.1875em;text-align:center; margin-top:1.25em;margin-left:0.625em;margin-right:0.625em;}
+  button.bottoner{background-color:#e02200; border:0.125em solid #c42200;box-shadow:0.3125em 0.3125em 0.3125em #aa2200; }
+  button.bottonev{background-color:#229900; border:0.125em solid #226600; box-shadow:0.3125em 0.3125em 0.3125em #224d00;}
+#risultati{width:100%;min-height:100%;}  
+#boxalert{width:90%;padding:0 1em 0 1em; font:normal 0.875em arial;color:#333;display:block;margin: 0 auto;} 
+#tempo{width:98%;padding:0em 1em 0 1em;font:normal 0.875em arial;color:#333;display:block;margin: 0 auto;}  
+#contentindex{}
+.boxindex{display:-webkit-flex; 
+  display: -ms-flexbox; 
+  display: flex;
+   -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+         justify-content:center;
+          align-content:space-between;
+          display:block;margin:15px auto;}
+.boxtitle{max-width:98%;padding:5px 1em 15px 1em;display:block;margin:0 auto;height:10%;background-color:#000040;}
+.centralindex{max-width:98%;display:block;margin:15px auto;min-height:60%}
+.indeximage{min-height:60%; vertical-align:middle;border:none;}
+.indeximage img{display:block;margin:0 auto;position: relative;
+bottom: 0;
+left: 0;
+margin: auto;
+right: 0;
+top: 0.625em;}
+.entra img{border:none;}
+.buttonindex{width:100%;position:fixed;bottom:0em;display:block;margin-left:auto;margin-bottom:5px;margin-right:auto; height:10%;vertical-align:middle;text-align:center;border:none;box-shadow:none;background-color:transparent;}
+.titleindex{font:bold 1.375em arial;color:#fff;background-color:#000044;text-align:center;}
+.indeximage{width:98%;display:block;margin:0 auto;}
+.imgindex{max-width:100%;display:block;margin:0 auto;}
+.contentindex{width:98%; display:block;margin:15px auto;}
+.cntindx{width:80%; font:normal 1.125em arial; color:#000044;display:block;margin:0 auto; text-align:center;vertical-align:middle;}
+.lgbutton{width:80%;height:3.125em;background:#000044;display:block;margin-top:1.5%;margin-left:auto;margin-right:auto;vertical-align:middle;
+background: -webkit-linear-gradient(#000044, #000099); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000044, #000099); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000044, #000099); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000044, #000099); /* Standard syntax */
+    border:1em solid #000033;
+    box-shadow:0.3125em 0.3125em 0.3125em #000066;
+    font:bold 1.375em arial;color:#fff; }
+.introtext{width:95%;display:block;margin:0 auto; font:normal 0.875em arial; color:#333;padding:0.9375em 1em 0.9375em 1em;}
+#testotrazione{width:90%;display:block;margin:0 auto; font:normal 0.875em arial;color:#333;}
+select{width:75%; display:block; margin:0.625em auto;}    
+#scelta, #scelta1{width:98%; display:block; margin:0 auto;text-align:center;}
+table{width:90%; font:bold 0.75em arial; display:block;margin-left:0.125em;}
+#risultaimbarcamento{width:90%;margin:0 auto;border:0.0625em solid #ddd;box-shadow:0.3125em 0.3125em 0.3125em #999;padding:0.3125em}
+#risultaimbarcamento h1{width:100%;padding:0em;line-height:2.5em;font:bold 1.25em arial;color:#fff;background-color:#000040; text-align:center;}
+#canvas{border:none;width:90%;display:block;margin:0 auto;box-shadow:0.1875em 0.1875em 0.1875em #999;}
+#canvas img{max-width:100%;border:none;}
+#risultati{width:100%; height:100%;margin-top:0;margin-left:0;background-color:#fff;}
+button.entra{background:transparent;border:none;box-shadow:none}
