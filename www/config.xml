@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="it.matisweb.evaporation" version="1.0.0">
-    <name>Evaporation de l'eau</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="it.matisweb.gauchissement" version="1.0.0">
+    <name>Gauchissement de dalles</name>
     <description>
-       Calcul de l'evaporation de l'eau dans le beton, et fenetre de debut du talochage
+       Calcul du gauchissement des dalle en beton jeune
     </description>
     <author email="angelo.nastasi@matisweb.it" href="http://matisweb.it">
-        Matisweb
+       Matisweb
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
